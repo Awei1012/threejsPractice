@@ -30,7 +30,6 @@
 
 
 import * as THREE from 'three'
-import './style.css' // 不知道为什么会报错，但是在src文件夹下引入style.css就不会报错，可能是因为vite的配置问题，反正有效果，暂时先这样引入吧
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 

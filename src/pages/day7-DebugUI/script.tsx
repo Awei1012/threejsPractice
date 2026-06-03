@@ -28,6 +28,7 @@ window.addEventListener('resize', () => {
 // 监听全屏事件
 window.addEventListener('dblclick', () => {
   // 判断当前是否已经全屏，如果已经全屏，就退出全屏，否则就进入全屏
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const fullscreenElement = document.fullscreenElement || (document as any).webkitFullscreenElement
   // 不能作用在safari上，因为safari不支持全屏API，所以需要判断一下，如果不支持全屏API，就不执行全屏操作。safari是苹果浏览器，遇到了再百度吧
   if (!fullscreenElement) {

@@ -11,6 +11,7 @@ const size = {
 }
 
 /**
+<<<<<<< HEAD
  *  材质
  */
 
@@ -83,6 +84,19 @@ texture.magFilter = THREE.NearestFilter
 // 但是对于像素风格的纹理来说，mipmap会导致模糊，所以需要关闭。关闭了也会对GPU好点 
 texture.generateMipmaps = false
 
+=======
+ *  Textures
+ */
+const image = new Image()
+image.onload = () => {
+  console.log('image loaded')
+}
+
+image.src = '/textures/door/color.jpg'
+
+// const textureLoader = new THREE.TextureLoader()
+
+>>>>>>> 6c8f56a62c8023b66502ff5d6483e474a441e2b4
 window.addEventListener('resize', () => {
   // 更新尺寸
   size.width = window.innerWidth

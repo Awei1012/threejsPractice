@@ -59,13 +59,13 @@ const fontLoader = new FontLoader();
 // 加载字体（带错误处理！）
 // 解决方案：在src同级添加Public，然后将node_modules中的font文件夹添加进去
 fontLoader.load(
-  '/fonts/helvetiker_regular.typeface.json',
+  '/fonts/FangSong_Regular.json',
   // 成功
   (font) => {
     console.log('✅ 字体加载成功', font);
     // 这里写你的文字生成逻辑
     const textGeometry = new TextGeometry(
-      'AweiThreejs',
+      '小马的Threejs练习',
       {
         font: font,
         size: 0.5,
@@ -142,7 +142,7 @@ fontLoader.load(
     //   scene.add(donut)
     // }
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 200; i++) {
       const donut = new THREE.Mesh(donutGeometry, material)
 
       // 随机位置

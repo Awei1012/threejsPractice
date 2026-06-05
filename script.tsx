@@ -33,8 +33,8 @@ window.addEventListener('resize', () => {
 const scene = new THREE.Scene()
 
 // 轴辅助工具，即坐标轴
-const axesHelper = new THREE.AxesHelper()
-scene.add(axesHelper)
+// const axesHelper = new THREE.AxesHelper()
+// scene.add(axesHelper)
 
 // 创建相机
 const camera = new THREE.PerspectiveCamera(75, size.width / size.height)
@@ -47,7 +47,7 @@ controls.enableDamping = true
 
 // 纹理
 const textureLoader = new THREE.TextureLoader()
-const matcapTexture = textureLoader.load('/src/static/textures/matcaps/3.png')
+const matcapTexture = textureLoader.load('/static/textures/matcaps/3.png')
 
 // 字体加载器
 const fontLoader = new FontLoader();
